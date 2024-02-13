@@ -1,5 +1,11 @@
 {
   "files": [],
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "noEmit": true   
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"],
   "references": [
     {
       "path": "./tsconfig.node.json"
