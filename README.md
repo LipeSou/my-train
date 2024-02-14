@@ -1,3 +1,3 @@
 # my-train
 
-An app for my girfriend see your train in Vue
+An app for my girlfriend to see her training on Vue
