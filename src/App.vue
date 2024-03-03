@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import Container from './components/Container.vue';
+import WorkoutComponent from "./components/WorkoutComponent.vue"
+
+
 
 </script>
 
 <template>
     <div class="wrapper">
-     <Container />
+     <WorkoutComponent />
     </div>
 </template>
 
-<style scoped>
 
-</style>

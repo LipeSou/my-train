@@ -1,3 +1,24 @@
+<script lang="ts" setup>
+import { ref, reactive, computed,  } from 'vue'
+import { ElMessageBox } from 'element-plus'
+
+const dialogVisible = ref(false)
+
+
+const handleClose = (done: () => void) => {
+  ElMessageBox.confirm('Are you sure to close this dialog?')
+    .then(() => {
+      done()
+    })
+    .catch(() => {
+      // catch error
+    })
+}
+
+
+</script>
+
+
 <template>
     <el-button plain @click="dialogVisible = true">
       Click to open the Dialog
@@ -20,21 +41,4 @@
       </template>
     </el-dialog>
   </template>
-  
-  <script lang="ts" setup>
-  import { ref } from 'vue'
-  import { ElMessageBox } from 'element-plus'
-  
-  const dialogVisible = ref(false)
-  
-  const handleClose = (done: () => void) => {
-    ElMessageBox.confirm('Are you sure to close this dialog?')
-      .then(() => {
-        done()
-      })
-      .catch(() => {
-        // catch error
-      })
-  }
-  </script>
   
