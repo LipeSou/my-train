@@ -1,13 +1,13 @@
-interface WorkoutMock {
+interface Workouts {
     workout: string;
-    image: string;
+    description: string;
 }
 
 type WorkoutType = {
-    'perna': WorkoutMock[];
-    'abdmen+gluteos': WorkoutMock[];
+    'perna': Workouts[];
+    'abdmen+gluteos': Workouts[];
 };
 
 type WorkoutKey = keyof WorkoutType;
 
-export type {WorkoutMock, WorkoutType, WorkoutKey}
+export type {Workouts, WorkoutType, WorkoutKey}
