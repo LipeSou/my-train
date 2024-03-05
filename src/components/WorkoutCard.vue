@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import type { WorkoutType, Workouts } from '@/type/WorkoutMockTypes';
+import { WorkoutType, Workouts } from '../type/WorkoutMockTypes';
+
 
 
 
@@ -14,6 +15,9 @@ import type { WorkoutType, Workouts } from '@/type/WorkoutMockTypes';
     }
     if(title === 'perna'){
       return "Perna"
+    }
+    if(title === 'superiores'){
+      return "Superiores"
     }
   }
 </script>

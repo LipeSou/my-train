@@ -6,6 +6,7 @@ interface Workouts {
 type WorkoutType = {
     'perna': Workouts[];
     'abdmen+gluteos': Workouts[];
+    "superiores": Workouts[];
 };
 
 type WorkoutKey = keyof WorkoutType;

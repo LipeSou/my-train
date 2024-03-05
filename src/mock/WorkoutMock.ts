@@ -15,6 +15,13 @@ const workout: WorkoutType = {
         { workout: 'Abdominal Prancha Lateral', description: 'De 30 segundos ao tanto que aguentar(dos dois lados)' },
         { workout: 'Glúteos em 4 apoios', description: '3 series de 10-12 repetições cada perna' },
         { workout: 'Superman(Glúteos)', description: '3 series de 10-12 repetições cada perna' },
+    ],
+    superiores: [
+        { workout: 'Polichinelo', description: '1 a 2 minutos(alongamento/aquecimento)' },
+        { workout: 'Flexões de joelho', description: '2 séries de 10-12 repetições' },
+        { workout: 'Elevação lateral com garrafinha de água', description: '2 séries de 10-12 repetições' },
+        { workout: 'Triceps Dips em Cadeira', description: '2 séries de 10-12 repetições' },
+        { workout: 'Curl de Bíceps com garrafa', description: '2 séries de 10-12 repetições' },
     ]
 };
 

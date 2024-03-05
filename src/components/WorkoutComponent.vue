@@ -1,25 +1,13 @@
-<script lang="ts">
-import { defineComponent, ref, computed } from 'vue';
-import { workout } from '@/mock/WorkoutMock';
-import type { WorkoutKey } from '@/type/WorkoutMockTypes';
+<script setup lang="ts">
+import { ref, computed } from 'vue';
 import WorkoutCard from './WorkoutCard.vue';
 import WorkoutTab from './WorkoutTab.vue';
+import { WorkoutKey } from '../type/WorkoutMockTypes';
+import { workout } from '../mock/WorkoutMock';
 
-
-export default defineComponent({
-    workout: 'WorkoutComponent',
-    setup() {
-        const selectedWorkout = ref<WorkoutKey>('perna');
-        const filteredWorkout = computed(() => {
-            return workout[selectedWorkout.value];
-        });
-
-        return {
-            selectedWorkout,
-            filteredWorkout
-        };
-    },
-    components: { WorkoutCard, WorkoutTab }
+const selectedWorkout = ref<WorkoutKey>('perna');
+const filteredWorkout = computed(() => {
+    return workout[selectedWorkout.value];
 });
 </script>
 
@@ -31,7 +19,6 @@ export default defineComponent({
     </select>
 
     <WorkoutTab :selectedWorkout="selectedWorkout"/>
-
 
     <WorkoutCard v-if="filteredWorkout" :workouts="filteredWorkout"  :selectedWorkout="selectedWorkout" />
   </div>
