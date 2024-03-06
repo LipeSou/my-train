@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { WorkoutType, Workouts } from '../type/WorkoutMockTypes';
+import { type WorkoutType, type Workouts } from '../type/WorkoutMockTypes';
+
+
 
 
 

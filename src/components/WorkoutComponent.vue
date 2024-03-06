@@ -2,8 +2,8 @@
 import { ref, computed } from 'vue';
 import WorkoutCard from './WorkoutCard.vue';
 import WorkoutTab from './WorkoutTab.vue';
-import { WorkoutKey } from '../type/WorkoutMockTypes';
 import { workout } from '../mock/WorkoutMock';
+import { type WorkoutKey } from '../type/WorkoutMockTypes';
 
 const selectedWorkout = ref<WorkoutKey>('perna');
 const filteredWorkout = computed(() => {
