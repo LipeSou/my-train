@@ -1,19 +1,22 @@
 <script setup lang="ts">
+import { toRefs } from 'vue';
 import { type WorkoutType, type Workouts } from '../type/WorkoutMockTypes';
+import DialogImage from "./DialogImage.vue"
 
-  defineProps<{
-    selectedWorkout: keyof WorkoutType,
-    workouts: Workouts[]
-  }>()
-
-  
+const props = defineProps<{
+  selectedWorkout: keyof WorkoutType,
+  workouts: Workouts[]
+}>()
+const { workouts } = toRefs(props);
 </script>
+
 
 <template>
     <div class="box-card">
       <div v-for="exercise in workouts" :key="exercise.workout" class="box-container" >
         <p class="text pink">{{ exercise.workout }}</p>
         <span class="description item">{{ exercise.description }}</span>
+        <DialogImage :workoutName="exercise.workout" :image="exercise?.image"/>
       </div>
     </div>
 </template>

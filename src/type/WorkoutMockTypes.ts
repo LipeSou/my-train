@@ -1,6 +1,7 @@
 interface Workouts {
     workout: string;
     description: string;
+    image?: string;
 }
 
 type WorkoutType = {

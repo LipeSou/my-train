@@ -36,9 +36,7 @@ const filteredWorkout = computed(() => {
 
 @media (width <= 768px) {
   .demo-tabs {
-    width: 90vw;
-    height: 90vh;
-    overflow: scroll;
+    width: 90vw;  
   }
 }
 </style>

@@ -1,14 +1,14 @@
 {
   "files": [],
-  "compilerOptions": {},
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"],
   "references": [
     {
-      "path": "./tsconfig.node.json",
+      "path": "./tsconfig.node.json"
     },
     {
-      "path": "./tsconfig.app.json",
-    },
+      "path": "./tsconfig.app.json"
+    }
   ],
+  "compilerOptions": {
+    "module": "NodeNext"
+  }
 }
